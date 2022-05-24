@@ -1,9 +1,9 @@
 terraform {
-  cloud {
+  backend "remote" {
     organization = "nathilda"
 
     workspaces {
-      name = "Terraform-CircleCI-Pipeline"
+      name = "learning_terraform_circleci"
     }
   }
 }
